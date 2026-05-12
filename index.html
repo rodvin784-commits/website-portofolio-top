@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - VinRumere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Portfolio.</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" title="Ganti Tema" aria-label="Toggle Theme">
+                <span class="theme-icon">💻</span>
+            </button>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Halo, Saya <span>VinRumere</span></h1>
+            <p>Web Developer & UI/UX Designer yang berfokus pada pengalaman digital yang elegan dan fungsional.</p>
+            <div>
+                <a href="#portfolio" class="btn">Lihat Karya</a>
+                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Mengenal lebih dekat siapa saya dan keahlian yang saya miliki.</p>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="image/profil.png" alt="">
+            </div>
+            <div class="about-text">
+                <h3>Passionate Developer dengan 2+ Tahun Pengalaman</h3>
+                <p>Saya adalah seorang pengembang web yang berdedikasi untuk menciptakan solusi digital yang tidak hanya terlihat bagus, tetapi juga berfungsi dengan sempurna.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">Beberapa proyek nyata yang telah saya kerjakan.</p>
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="portfolio-card">
+                <img src="image/project_1.png" alt="E-Commerce Dashboard" class="card-img" loading="lazy">
+                <div class="card-content">
+                    <h3>VotSport</h3>
+                    <p>Aplikasi voting digital berbasis PHP untuk OSIS AKRAB yang cepat, aman, dan mudah digunakan.</p>
+                    <a href="https://vinrumere.infinityfreeapp.com/register.php" class="card-link">Lihat Detail →</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="portfolio-card">
+                <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Company+Profile" alt="Company Profile Website" class="card-img" loading="lazy">
+                <div class="card-content">
+                    <h3>Company Profile Website</h3>
+                    <p>Website korporat modern dengan animasi halus dan optimasi SEO tinggi.</p>
+                    <a href="#" class="card-link">Lihat Detail →</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="portfolio-card">
+                <img src="https://placehold.co/600x400/1340a8/ffffff?text=Mobile+App+Landing" alt="Mobile App Landing Page" class="card-img" loading="lazy">
+                <div class="card-content">
+                    <h3>Mobile App Landing Page</h3>
+                    <p>Landing page konversi tinggi untuk peluncuran aplikasi iOS & Android.</p>
+                    <a href="#" class="card-link">Lihat Detail →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact (Fungsional WhatsApp & Gmail) -->
+    <section id="contact">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-subtitle">Punya proyek atau pertanyaan? Jangan ragu untuk menghubungi saya.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Mari Terhubung</h3>
+                <p>Saya selalu terbuka untuk diskusi proyek baru, ide kreatif, atau kesempatan untuk menjadi bagian dari visi Anda.</p>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div>rodvin784@gmail.com</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div>+62 852 7805 2564</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>Semarang, Indonesia</div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Alamat Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="pesan" placeholder="Pesan Anda..." rows="4" required></textarea>
+                </div>
+                <!-- Opsi pengiriman -->
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                        <input type="radio" name="metode" value="wa" checked> Kirim via WhatsApp
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                        <input type="radio" name="metode" value="email"> Kirim via Gmail
+                    </label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vinrumere. Dibuat dengan 💙 dan kopi.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        document.querySelectorAll('.nav-links a').forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.textContent = '☰';
+            });
+        });
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Theme Toggle (Light / Auto / Dark)
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const html = document.documentElement;
+        const themes = ['light', 'auto', 'dark'];
+        let currentIndex = themes.indexOf(localStorage.getItem('theme') || 'auto');
+
+        function applyTheme(mode) {
+            if (mode === 'auto') {
+                const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                html.setAttribute('data-theme', systemDark ? 'dark' : 'light');
+                themeIcon.textContent = '💻';
+            } else {
+                html.setAttribute('data-theme', mode);
+                themeIcon.textContent = mode === 'dark' ? '🌙' : '☀️';
+            }
+        }
+
+        applyTheme(themes[currentIndex]);
+
+        themeToggle.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % themes.length;
+            const selected = themes[currentIndex];
+            localStorage.setItem('theme', selected);
+            applyTheme(selected);
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (localStorage.getItem('theme') === 'auto') {
+                html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+            }
+        });
+
+        // ======================== FORM PENGIRIMAN PESAN (WA / EMAIL) ========================
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const pesan = document.getElementById('pesan').value.trim();
+            const metode = document.querySelector('input[name="metode"]:checked').value;
+
+            if (!nama || !email || !pesan) {
+                alert('Harap isi semua field (Nama, Email, Pesan).');
+                return;
+            }
+
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Masukkan alamat email yang valid.');
+                return;
+            }
+
+            const waNomor = '6285278052564';  // tanpa '+' untuk wa.me
+            const emailTujuan = 'rodvin784@gmail.com';
+
+            if (metode === 'wa') {
+                // Format pesan untuk WhatsApp
+                const teksPesan = `Halo, saya ${nama} (${email}).\n\n${pesan}`;
+                const waUrl = `https://wa.me/${waNomor}?text=${encodeURIComponent(teksPesan)}`;
+                window.open(waUrl, '_blank');
+                alert('Pesan akan terbuka di WhatsApp. Silakan klik kirim secara manual.');
+            } 
+            else if (metode === 'email') {
+                const subject = `Pesan dari ${nama} - Portfolio Contact`;
+                const body = `Nama: ${nama}\nEmail: ${email}\n\nPesan:\n${pesan}`;
+                const mailtoUrl = `mailto:${emailTujuan}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoUrl;
+                alert('Aplikasi email akan terbuka. Silakan kirim pesan secara manual.');
+            }
+        });
+    </script>
+</body>
+</html>
